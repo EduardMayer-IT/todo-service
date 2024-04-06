@@ -13,7 +13,7 @@ var mongoose =require('mongoose');
 mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_URL}/?retryWrites=true&w=majority&appName=Cluster0`)
 
 // process.env.PORT || 3000 erlaubt uns, den Port als Environment-Variable einzureichen. Wenn kein Port eingereicht wird, wird der Port 3000 verwendet
-var port  = process.env.PORT || 3001;
+var port  = process.env.PORT || 3000;
 
 // Erstellung vom Speicher-Objekt im Arbeitsspeicher
 var cache = new NodeCache();
